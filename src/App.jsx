@@ -2,7 +2,10 @@ import { useState } from 'react';
 
 const App = () => {
   const [persons, setPersons] = useState([
-    { name: 'Arto Hellas', id: 1 }  // убедитесь, что id уникален
+    { name: 'Arto Hellas', number: '040-123456' },
+    { name: 'Ada Lovelace', number: '39-44-5323523' },
+    { name: 'Dan Abramov', number: '12-43-234345' },
+    { name: 'Mary Poppendieck', number: '39-23-6423122' }
   ]);
   const [newName, setNewName] = useState('');
 
@@ -16,7 +19,7 @@ const App = () => {
         const nameObject = {
           name: newName,
           id: persons.length + 1,  // уникальный идентификатор
-          phonenumber: newNumber
+          number: newNumber
         };
     
         setPersons(persons.concat(nameObject));
@@ -72,7 +75,7 @@ const App = () => {
       <div>debug: {newName}{newNumber}</div>
       <ul>
         {persons.map(person => (
-          <li key={person.id}>{person.name}   {person.phonenumber}</li>  // используем уникальный id
+          <li key={person.id}>{person.name}   {person.number}</li>  //  
         
         ))}
       </ul>
