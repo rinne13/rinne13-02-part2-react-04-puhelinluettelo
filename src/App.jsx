@@ -3,6 +3,7 @@ import { v4 as uuidv4 } from 'uuid';
 import Filter from './Filter';
 import PersonForm from './PersonForm';
 import Persons from './Persons';
+import './App.css'; 
 
 const App = () => {
   const [persons, setPersons] = useState([
