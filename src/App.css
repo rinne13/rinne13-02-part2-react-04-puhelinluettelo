@@ -8,8 +8,8 @@ body {
     padding: 0;
   }
   
-  h2, h3 {
-    color: #243256;
+  h2, h3, h4 {
+    color: #192850;
   }
   
 .title {
@@ -43,11 +43,15 @@ body {
     border-radius: 4px;
     cursor: pointer;
     margin-top: 10px;
+    
   }
   
   button:hover {
     
     background-color: #0056b3;
+    background-color: #73b7ff;
+    transition: background-color 0.3s ease;
+    
   }
   
   ul {

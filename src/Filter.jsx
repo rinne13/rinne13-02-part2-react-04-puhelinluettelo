@@ -6,7 +6,7 @@ const Filter = ({ filter, filterNumber, handleFilterChange, handleFilterNumberCh
           Name filter shown with: <input value={filter} onChange={handleFilterChange} />
         </div>
 
-        <div>
+        <div class="title">
           Number filter shown with: <input value={filterNumber} onChange={handleFilterNumberChange} />
         </div>
 
