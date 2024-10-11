@@ -1,4 +1,6 @@
 import { useState } from 'react';
+import { v4 as uuidv4 } from 'uuid';
+
 
 const App = () => {
   const [persons, setPersons] = useState([
@@ -18,7 +20,7 @@ const App = () => {
       if (persons.findIndex((input) => input.name === newName) === -1) {
         const nameObject = {
           name: newName,
-          id: persons.length + 1,  // уникальный идентификатор
+          id: uuidv4(),  // уникальный идентификатор
           number: newNumber
         };
     
@@ -75,7 +77,7 @@ const App = () => {
       <div>debug: {newName}{newNumber}</div>
       <ul>
         {persons.map(person => (
-          <li key={person.id}>{person.name}   {person.number}</li>  //  
+          <li key={person.name}>{person.name}   {person.number}</li>  //  
         
         ))}
       </ul>
