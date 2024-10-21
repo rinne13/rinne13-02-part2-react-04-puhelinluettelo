@@ -1,4 +1,5 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
+import axios from 'axios';
 import { v4 as uuidv4 } from 'uuid';
 import Filter from './Filter';
 import PersonForm from './PersonForm';
@@ -12,6 +13,15 @@ const App = () => {
     { name: 'Dan Abramov', number: '12-43-234345', id: uuidv4() },
     { name: 'Mary Poppendieck', number: '39-23-6423122', id: uuidv4() }
   ]);
+
+  useEffect(() => {
+    axios 
+    .get('http://localhost:3002/persons')
+    .then(response => {
+      setPersons(response.data);
+        })
+
+  }, []);
 
   const [newName, setNewName] = useState('');
   const [newNumber, setNewNumber] = useState('');

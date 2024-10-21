@@ -2,11 +2,11 @@ const Filter = ({ filter, filterNumber, handleFilterChange, handleFilterNumberCh
     return (
       <div>
 
-        <div class="title">
+        <div className="title">
           Name filter shown with: <input value={filter} onChange={handleFilterChange} />
         </div>
 
-        <div class="title">
+        <div className="title">
           Number filter shown with: <input value={filterNumber} onChange={handleFilterNumberChange} />
         </div>
 
