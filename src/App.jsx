@@ -23,6 +23,9 @@ const App = () => {
 
   }, []);
 
+  console.log('render', persons.length, 'persons');
+
+
   const [newName, setNewName] = useState('');
   const [newNumber, setNewNumber] = useState('');
   const [filter, setFilter] = useState('');
@@ -30,15 +33,23 @@ const App = () => {
 
   const addName = (event) => {
     event.preventDefault();
+
+
     if (persons.findIndex((input) => input.name === newName) === -1) {
       const nameObject = {
         name: newName,
         id: uuidv4(),
         number: newNumber
       };
-      setPersons(persons.concat(nameObject));
-      setNewName('');
-      setNewNumber('');
+
+
+      axios
+      .post('http://localhost:3002/persons', nameObject) 
+      .then(response => {
+        setPersons(persons.concat(response.data)); 
+        setNewName('');
+        setNewNumber('');
+      });
     } else {
       alert(`${newName} is already added to phonebook`);
     }
