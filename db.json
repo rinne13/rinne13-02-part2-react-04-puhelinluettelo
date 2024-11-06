@@ -1,28 +1,13 @@
 {
   "persons": [
     {
-      "name": "Arto Hellas",
-      "number": "040-123456",
-      "id": "1"
+      "id": "8af45e4d-0d1b-428a-a1c4-da9409923903",
+      "name": "Mikko Perhonen ",
+      "number": "+358123456789"
     },
     {
-      "name": "Ada Lovelace",
-      "number": "39-44-5323523",
-      "id": "2"
-    },
-    {
-      "name": "Dan Abramov",
-      "number": "12-43-234345",
-      "id": "3"
-    },
-    {
-      "name": "Mary Poppendieck",
-      "number": "39-23-6423122",
-      "id": "4"
-    },
-    {
-      "id": "b956315a-6ceb-47e5-8b96-b5f09757ddd6",
-      "name": "Pekka Riikanen",
+      "id": "746fdb93-dfe0-4615-9767-86ad9ed95a77",
+      "name": "Mikko Perhonen",
       "number": "+358123456789"
     }
   ]
