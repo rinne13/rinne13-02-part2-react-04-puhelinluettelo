@@ -23,7 +23,7 @@ const App = () => {
       }
     });
   }
-  
+
   useEffect(refreshPersons, []);
 
   
@@ -43,7 +43,7 @@ const App = () => {
         setPersons(persons.concat(returnedPerson)); 
       });
     } else {
-      const confirmUpdate = window.confirm(`${newName} уже есть в телефонной книге. Заменить номер?`);
+      const confirmUpdate = window.confirm(`${newName} is already added to phonebook, replace the old number with a new one?`);
       if (confirmUpdate) {
         const updatedPerson = { ...existingPerson, number: newNumber };
         contactService.update(existingPerson.id, updatedPerson).then(returnedPerson => {

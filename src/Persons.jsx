@@ -17,19 +17,4 @@ const Persons = ({ personsToShow, handleDelete }) => {
   );
 }
 
-/*const handleDelete = (id) => {
-  if (window.confirm('Are you sure you want to delete this contact?')) {
-    contactService.remove(id)
-      .then(() => {
-        setPersons(contactService.getAll());
-      })
-      .catch(error => {
-        console.error('Error deleting contact:', error);
-      });
-  }
-};
-*/
-
-
-
 export default Persons;

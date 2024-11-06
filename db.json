@@ -1,14 +1,9 @@
 {
   "persons": [
     {
-      "id": "8af45e4d-0d1b-428a-a1c4-da9409923903",
-      "name": "Mikko Perhonen ",
-      "number": "+358123456789"
-    },
-    {
       "id": "746fdb93-dfe0-4615-9767-86ad9ed95a77",
       "name": "Mikko Perhonen",
-      "number": "+358123456789"
+      "number": "+358123456787"
     }
   ]
 }
