@@ -5,11 +5,12 @@ import contactService from './services/contactService'; // Импортируе�
 
 const Persons = ({ personsToShow, handleDelete }) => {
   return (
+    
       <ul>
           {personsToShow.map(person => (
               <li key={person.id}>
                   <p>{person.name} {person.number}
-                      <button onClick={() => handleDelete(person.id)}>Delete</button> 
+                      <button onClick={() => handleDelete(person)}>Delete</button> 
                   </p>
               </li>
           ))}

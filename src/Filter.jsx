@@ -1,6 +1,6 @@
 const Filter = ({ filter, filterNumber, handleFilterChange, handleFilterNumberChange }) => {
   return (
-    <div>
+    <div className="css-for-filter">
 
       <div className="title">
         Name filter shown with: <input value={filter} onChange={handleFilterChange} />

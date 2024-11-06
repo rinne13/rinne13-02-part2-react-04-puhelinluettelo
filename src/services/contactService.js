@@ -17,6 +17,9 @@ const remove = (id) => {
   return axios.delete(`${baseUrl}/${id}`).then(response => response.data);
 };
 
+
+
+
 // Экспортируем все функции
 export default {
   getAll,
